@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+    <table style="">
+	<tr>
+		<td> <input class="form-control" data-ng-model="id"	placeholder="Employee Id">
+		</td> <td width='2%'></td>
+		<td> <button class="btn btn-info" id="mybutton">
+				<span class="glyphicon glyphicon-search"></span>Search Employee
+			</button>
+		</td><td width='2%'></td>
+		<td> <button class="btn btn-info" id="addNew" onclick="addEmployee()">Add Employee
+			</button>
+		</td>
+	</tr>
+</table>
+    <div class="container">
+<table class="table table-bordered text-center tableback">
+<tr>
+    {% for emp in key_list %}
+        <th style="text-align: center">{{ emp }}</th>
+    {% endfor %}
+</tr>
+    {% for emp in emp_list %}
+        <tr>
+            <td><a href="{{ url_for('update', emp_id=emp.id)}}">{{ emp.id }}</a></td>
+            <td>{{ emp.empName }}</td>
+            <td>{{ emp.skill }}</td>
+            <td>{{ emp.designation }}</td>
+            <td>{{ emp.department }}</td>
+            <td>{{ emp.location }}</td>
+            <td><a href="{{ url_for('emp_delete', emp_id=emp.id)}}"><span  class="glyphicon glyphicon-remove"></span></a> </td>
+        </tr>
+    {% endfor %}
+</table>
+    </div>
+<script src="/static/js/commonJS.js">
+</script>
+{% endblock %}

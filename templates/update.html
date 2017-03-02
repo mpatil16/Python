@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <center>
+<div class="form-style-2">
+	<div class="form-style-2-heading">Enter Employee Information</div>
+	<form name="newEmpForm" action="{{ url_for('update', emp_id=emp.id) }}" method='post'>
+
+      <br>
+		<label>
+            <span style="text-align: left">Employee Id </span>
+            <input type="text" name = "id" class="input-field" value="{{ emp.id }}" readonly/>
+        </label>
+		<label>
+            <span style="text-align: left">Name </span>
+            <input type="text" name="name" class="input-field" value="{{ emp.empName }}"/>
+        </label>
+		<label>
+            <span style="   text-align: left">Skill </span>
+            <input type="text" name="skill" class="input-field" value="{{ emp.skill }}"/>
+        </label>
+		<label>
+            <span style="text-align: left">Designation </span>
+            <input type="text" name="designation" class="input-field" value="{{ emp.designation }}"/>
+        </label>
+		<label>
+            <span style="text-align: left">Department </span>
+            <input type="text" name="department" class="input-field" value="{{ emp.department}}"/>
+        </label>
+		<label>
+            <span style="text-align: left">Location </span>
+            <input type="text" name="location" class="input-field" value="{{ emp.location }}"/>
+        </label>
+
+		<table>
+
+				<tr>
+					<td></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="submit" name="mysubmit" value="Update" class="btn btn-primary" />
+					<span>&nbsp;&nbsp;</span>
+                        <a href="{{ url_for('index')}}"><input type="button" name="goBack" value="Back" class="btn btn-info"/></a>
+					</td>
+				</tr>
+
+		</table>
+
+	</form>
+</div>
+    </center>
+
+{% endblock %}

@@ -1,0 +1,137 @@
+@CHARSET "ISO-8859-1";
+
+#background {
+	background-color: #f1f1f9;
+}
+
+.container {
+	padding: 50px 320px 0 210px
+}
+
+.ingrp {
+	padding: 50px 350px 0 350px
+}
+
+.imgback {
+	float: left;
+	background-color: hsla(241, 67%, 16%, 0.81);
+}
+
+.tableback {
+	background-color: hsla(213, 38%, 72%, 0.87);
+}
+
+.row {
+	font-size: 15px;
+	text-align: left;
+}
+
+.even {
+	background-color: hsla(213, 38%, 72%, 0.87);;
+}
+
+.odd {
+	background-color: hsla(200, 28%, 65%, 0.87);;
+}
+
+.jumbotron {
+	background-color: hsla(241, 67%, 16%, 0.81);
+	color: #fff;
+	font-family: Montserrat, sans-serif;
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+
+.form-style-2 {
+	max-width: 500px;
+	padding: 20px 12px 10px 20px;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+
+.form-style-2-heading {
+	font-weight: bold;
+	font-style: italic;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 20px;
+	font-size: 15px;
+	padding-bottom: 3px;
+}
+
+.form-style-2 label {
+	display: block;
+	margin: 0px 0px 15px 0px;
+}
+
+.form-style-2 label>span {
+	width: 100px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+
+.form-style-2 span.required {
+	color: red;
+}
+
+.form-style-2 input.input-field {
+	width: 48%;
+}
+
+.form-style-2 input.input-field, .form-style-2 .tel-number-field,
+	.form-style-2 .textarea-field, .form-style-2 .select-field {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #C2C2C2;
+	box-shadow: 1px 1px 4px #EBEBEB;
+	-moz-box-shadow: 1px 1px 4px #EBEBEB;
+	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+
+.patientAlert {
+	position: fixed;
+	z-index: 5;
+	width: 50%;
+	height: 7%;
+	left: 50%;
+	margin-left: -25%;
+	margin-top: -17%;
+}
+
+.main {
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+.maincontainer {
+	z-index: 10;
+	margin: 20px auto;
+}
+
+footer {
+	width: 100%;
+}
+
+footer {
+	background-color: hsla(241, 67%, 16%, 0.81);
+	border-color: #080808;
+	height: 40px;
+	clear: both;
+	padding: 5px 15px;
+}
+
+footer .footerText {
+	color: #eee;
+	width: 100%;
+	filter: blur(0.5px);
+	text-align: right;
+	height: 100%;
+}
